@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha256-dABdfBfUoC8vJUBOwGVdm8L9qlMWaHTIfXt+7GnZCIo=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/silver/pace-theme-minimal.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"next.yooui.top","root":"/","images":"/images","scheme":"Mist","darkmode":true,"version":"8.22.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":true,"style":"mac"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="又要科创比赛了，想了好久的项目(真的很久)，终于想出来了一个—等高线山体部位识别的项目，但是因为时间不够收集数据，所以只能用老师改进的神农中草药识别系统，这个文章用ai来介绍一下这个项目。  程序介绍项目目的以中小学生为主要科普对象，辅助生物学、中医药文化课程教学，同时适用于青少年自然教育活动的实践场景(如校园社团、研学营地、植物园参观等)。 核心功能 单图识别：支持手机拍摄&#x2F;相册上传">
+<meta property="og:type" content="article">
+<meta property="og:title" content="科创项目之神农中草药">
+<meta property="og:url" content="http://next.yooui.top/2025/03/03/%E7%A7%91%E5%88%9B%E9%A1%B9%E7%9B%AE%E4%B9%8B%E7%A5%9E%E5%86%9C%E4%B8%AD%E8%8D%89%E8%8D%AF/index.html">
+<meta property="og:site_name" content="Yooui-Blog">
+<meta property="og:description" content="又要科创比赛了，想了好久的项目(真的很久)，终于想出来了一个—等高线山体部位识别的项目，但是因为时间不够收集数据，所以只能用老师改进的神农中草药识别系统，这个文章用ai来介绍一下这个项目。  程序介绍项目目的以中小学生为主要科普对象，辅助生物学、中医药文化课程教学，同时适用于青少年自然教育活动的实践场景(如校园社团、研学营地、植物园参观等)。 核心功能 单图识别：支持手机拍摄&#x2F;相册上传">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://www.helloimg.com/i/2025/03/02/67c427b403f42.png">
+<meta property="article:published_time" content="2025-03-03T13:21:27.000Z">
+<meta property="article:modified_time" content="2025-03-15T14:56:36.605Z">
+<meta property="article:author" content="Yoooui">
+<meta property="article:tag" content="科创项目">
+<meta property="article:tag" content="神农中草药">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.helloimg.com/i/2025/03/02/67c427b403f42.png">
+
+
+<link rel="canonical" href="http://next.yooui.top/2025/03/03/%E7%A7%91%E5%88%9B%E9%A1%B9%E7%9B%AE%E4%B9%8B%E7%A5%9E%E5%86%9C%E4%B8%AD%E8%8D%89%E8%8D%AF/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://next.yooui.top/2025/03/03/%E7%A7%91%E5%88%9B%E9%A1%B9%E7%9B%AE%E4%B9%8B%E7%A5%9E%E5%86%9C%E4%B8%AD%E8%8D%89%E8%8D%AF/","path":"2025/03/03/科创项目之神农中草药/","title":"科创项目之神农中草药"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>科创项目之神农中草药 | Yooui-Blog</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Yooui-Blog</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%A8%8B%E5%BA%8F%E4%BB%8B%E7%BB%8D"><span class="nav-number">1.</span> <span class="nav-text">程序介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A1%B9%E7%9B%AE%E7%9B%AE%E7%9A%84"><span class="nav-number">1.1.</span> <span class="nav-text">项目目的</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A0%B8%E5%BF%83%E5%8A%9F%E8%83%BD"><span class="nav-number">1.2.</span> <span class="nav-text">核心功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9B%E6%96%B0%E7%82%B9"><span class="nav-number">1.3.</span> <span class="nav-text">创新点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A8%8B%E5%BA%8F%E5%B1%95%E7%A4%BA"><span class="nav-number">1.4.</span> <span class="nav-text">程序展示</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%A8%8B%E5%BA%8F%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD"><span class="nav-number">2.</span> <span class="nav-text">程序资源下载</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Yoooui"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">Yoooui</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/Yooi2026" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Yooi2026" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:baiducomout@qq.com" title="E-Mail → mailto:baiducomout@qq.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://res.abeim.cn/api/qq/?qq=3052915674" title="QQ → https:&#x2F;&#x2F;res.abeim.cn&#x2F;api&#x2F;qq&#x2F;?qq&#x3D;3052915674" rel="noopener me" target="_blank"><i class="fab fa-qq fa-fw"></i>QQ</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="sidebar-inner sidebar-blogroll">
+      <div class="links-of-blogroll animated">
+        <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+          链接
+        </div>
+        <ul class="links-of-blogroll-list">
+            <li class="links-of-blogroll-item">
+              <a href="http://blog.yooui.top/" title="http:&#x2F;&#x2F;blog.yooui.top" rel="noopener" target="_blank">Yooouiの小站</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://chatgpt.yooui.top/" title="https:&#x2F;&#x2F;ChatGPT.yooui.top" rel="noopener" target="_blank">YooouiのChatGPT</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://next.yooui.top/2025/03/03/%E7%A7%91%E5%88%9B%E9%A1%B9%E7%9B%AE%E4%B9%8B%E7%A5%9E%E5%86%9C%E4%B8%AD%E8%8D%89%E8%8D%AF/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Yoooui">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Yooui-Blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="科创项目之神农中草药 | Yooui-Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          科创项目之神农中草药
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2025-03-03 21:21:27" itemprop="dateCreated datePublished" datetime="2025-03-03T21:21:27+08:00">2025-03-03</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2025-03-15 22:56:36" itemprop="dateModified" datetime="2025-03-15T22:56:36+08:00">2025-03-15</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%A7%91%E5%88%9B/" itemprop="url" rel="index"><span itemprop="name">科创</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><blockquote>
+<p>又要科创比赛了，想了好久的项目(真的很久)，终于想出来了一个—等高线山体部位识别的项目，但是因为时间不够收集数据，所以只能用老师改进的神农中草药识别系统，这个文章用ai来介绍一下这个项目。</p>
+</blockquote>
+<h1 id="程序介绍"><a href="#程序介绍" class="headerlink" title="程序介绍"></a>程序介绍</h1><h2 id="项目目的"><a href="#项目目的" class="headerlink" title="项目目的"></a>项目目的</h2><p>以中小学生为主要科普对象，辅助生物学、中医药文化课程教学，同时适用于青少年自然教育活动的实践场景(如校园社团、研学营地、植物园参观等)。</p>
+<h2 id="核心功能"><a href="#核心功能" class="headerlink" title="核心功能"></a>核心功能</h2><ol>
+<li>单图识别：支持手机拍摄&#x2F;相册上传单张草药图片</li>
+<li>批量识别：最多同时上传5张图片进行批量识别</li>
+<li>识别反馈：显示识别置信度（85%以上高亮标记）</li>
+</ol>
+<h2 id="创新点"><a href="#创新点" class="headerlink" title="创新点"></a>创新点</h2><ol>
+<li>多窗口资料系统的教学创新</li>
+<li>教育型图像识别系统设计</li>
+<li>多维科普知识架构</li>
+</ol>
+<h2 id="程序展示"><a href="#程序展示" class="headerlink" title="程序展示"></a>程序展示</h2><p><img data-src="https://www.helloimg.com/i/2025/03/02/67c427b403f42.png" alt="code"></p>
+<h1 id="程序资源下载"><a href="#程序资源下载" class="headerlink" title="程序资源下载"></a>程序资源下载</h1><blockquote>
+<p>可以在这下载本文章介绍的程序<br><a target="_blank" rel="noopener" href="https://pan.baidu.com/s/11dj4kmF_dYN4Qe-i3tWCgg?pwd=xrpx">点我前往下载!!</a></p>
+</blockquote>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E7%A7%91%E5%88%9B%E9%A1%B9%E7%9B%AE/" rel="tag"># 科创项目</a>
+              <a href="/tags/%E7%A5%9E%E5%86%9C%E4%B8%AD%E8%8D%89%E8%8D%AF/" rel="tag"># 神农中草药</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2025/03/02/clashmate/" rel="prev" title="clash-meta版分享">
+                  <i class="fa fa-angle-left"></i> clash-meta版分享
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2025/03/03/Chatgptwebui/" rel="next" title="怎么搭建一个自己的ChatGPT">
+                  怎么搭建一个自己的ChatGPT <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Yoooui</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
+
+  
+
+
+
+
+  <script src="/js/third-party/pace.js"></script>
+
+
+  
+
+
+
+
+
+</body>
+</html>
