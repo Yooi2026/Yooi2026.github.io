@@ -34,18 +34,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>博客项目分享</title>
-    <url>/posts/b70d5f18.html</url>
-    <content><![CDATA[<p><a href="https://c.wss.cc/f/ghcq21iwwdg">hexo初  下载地址</a>(快传文件，2025年3月10日10点自动删除)</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm config set registry https://registry.npmmirror.com</span><br><span class="line"></span><br><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>资源</category>
-      </categories>
-      <tags>
-        <tag>网站</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>怎么搭建一个自己的ChatGPT</title>
     <url>/posts/c1378c40.html</url>
     <content><![CDATA[<blockquote>
@@ -79,6 +67,18 @@
 ]]></content>
       <categories>
         <category>自述</category>
+      </categories>
+      <tags>
+        <tag>网站</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>博客项目分享</title>
+    <url>/posts/b70d5f18.html</url>
+    <content><![CDATA[<p><a href="https://c.wss.cc/f/ghcq21iwwdg">hexo初  下载地址</a>(快传文件，2025年3月10日10点自动删除)</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm config set registry https://registry.npmmirror.com</span><br><span class="line"></span><br><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>资源</category>
       </categories>
       <tags>
         <tag>网站</tag>
@@ -181,7 +181,7 @@
 </tbody></table>
 <h2 id="1-4镜像源"><a href="#1-4镜像源" class="headerlink" title="1.4镜像源"></a>1.4镜像源</h2><div class="tabs" id="选项卡-2"><ul class="nav-tabs"><li class="tab active"><a href="#选项卡-2-1">清华源</a></li><li class="tab"><a href="#选项卡-2-2">阿里云镜像</a></li><li class="tab"><a href="#选项卡-2-3">豆瓣镜像</a></li><li class="tab"><a href="#选项卡-2-4">中国科技大学</a></li></ul><div class="tab-content"><div class="tab-pane active" id="选项卡-2-1"><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="选项卡-2-2"><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://mirrors.aliyun.com/pypi/simple/</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="选项卡-2-3"><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://pypi.douban.com/simple/</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="选项卡-2-4"><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://pypi.mirrors.ustc.edu.cn/simple/</span><br></pre></td></tr></table></figure></div></div></div>
 
-<h1 id="3-python所有库及功能-共1000"><a href="#3-python所有库及功能-共1000" class="headerlink" title="3.python所有库及功能(共1000+)"></a>3.python所有库及功能(共1000+)</h1><p>最后最后，附上python所有库及功能(共1000+) <del>此处我懒得整理了</del><br>数据处理<br>Chardet字符编码探测器，可以自动检测文本、网页、xml的编码。</p>
+<h1 id="2-python所有库及功能-共1000"><a href="#2-python所有库及功能-共1000" class="headerlink" title="2.python所有库及功能(共1000+)"></a>2.python所有库及功能(共1000+)</h1><p>最后最后，附上python所有库及功能(共1000+) <del>此处我懒得整理了</del><br>数据处理<br>Chardet字符编码探测器，可以自动检测文本、网页、xml的编码。</p>
 <p>colorama主要用来给文本添加各种颜色，并且非常简单易用。</p>
 <p>Prettytable主要用于在终端或浏览器端构建格式化的输出。</p>
 <p>difflib，[Python]标准库，计算文本差异</p>
