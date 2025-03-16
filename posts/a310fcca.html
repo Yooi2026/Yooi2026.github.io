@@ -1,128 +1,299 @@
-<?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>怎么搭建一个自己的ChatGPT</title>
-    <url>/posts/c1378c40.html</url>
-    <content><![CDATA[<blockquote>
-<p>之前不是自己搭了个ChatGPT的web么，现在需要重新搭一次，干脆写成一篇文章记录一下。<br>借鉴了一下<a href="https://www.fomal.cc/posts/74ac8dc8.html">Fomalhaut大佬的文章</a></p>
-</blockquote>
-<span id="more"></span>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.3.0">
 
-<h1 id="前置条件"><a href="#前置条件" class="headerlink" title="前置条件"></a>前置条件</h1><ol>
-<li>需要一个 OPENAI 账号(chatGPT 账号)，或者有效的 API KEY，没有的话叫朋友借一个 key</li>
-<li>需要一个国内的域名，没有的可以去硅云白嫖一个</li>
-<li>需要有能够访问外国网站的能力(你懂的)</li>
-</ol>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-      <tags>
-        <tag>网站</tag>
-        <tag>ChatGPT</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/posts/4a17b156.html</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<span id="more"></span>
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<link rel="stylesheet" href="/css/main.css">
 
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha256-dABdfBfUoC8vJUBOwGVdm8L9qlMWaHTIfXt+7GnZCIo=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/silver/pace-theme-minimal.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
 
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>我为什么想要搭这个网站?</title>
-    <url>/posts/85998d46.html</url>
-    <content><![CDATA[<h1 id="关于我为什么想要搭一个博客"><a href="#关于我为什么想要搭一个博客" class="headerlink" title="关于我为什么想要搭一个博客"></a>关于我为什么想要搭一个博客</h1><p>在2022年的某一天，我在逛B站时，看到了<a href="https://www.bilibili.com/video/BV1G84y1B7NH/">Fomalhaut大佬的视频</a>，于是决定去做一个自己的博客(主要是因为想在朋友面前装B嘿嘿)。</p>
-<span id="more"></span>
-<h1 id="关于我搭博客的历程"><a href="#关于我搭博客的历程" class="headerlink" title="关于我搭博客的历程"></a>关于我搭博客的历程</h1><p>原先是看Fomalhaut大佬的视频，一步一步搭好一个<a href="https://blog.yooui.top/">hexo+butterfly主题的博客</a>。观看Fomalhaut大佬的视频时发现，他自己也搭了一个博客，并且把教程的文章都写好放在了上面，我又觉得原来做的博客过于臃肿，决定看着教程重新搭建整理一下。于是乎，我就对着上面重新搭建了一个博客，也是一样的hexo+butterfly主题。观看到引入字体，引入icon的时候，我一直看不明白，一度想要放弃这一步，但是我觉得做博客就不能偷工减料。我突然想到Fomalhaut大佬的视频;在看过Fomalhaut大佬的视频后，终于引入好了字体</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo cl;hexo g;hexo s</span><br></pre></td></tr></table></figure>
-<p>后,看到字体和icon生效的时候真的很开心。看完文档，搭建完博客，看到博客里面五颜六色，点击效果，各种icon图标，各种界面。我虽然开心，但是我发现随着界面，插件的增多,hexo渲染速度变慢，整个界面也复杂了，而且做完后，没了新鲜感，也懒得去写文章。所以我决定重新搭一个简洁，实用的博客，所以我更换主题为Next，有了搭建第一个博客的经验，这个博客我自己更改配置项(看不懂的直接翻译哈哈)，基本没有依赖教程，于是就成了现在这个样子，但是还是没有让我满意，我觉得还是需要美化一点，不然太单调了。</p>
-<h1 id="网站定位"><a href="#网站定位" class="headerlink" title="网站定位"></a>网站定位</h1><p>我本身是一个初中生，有些科创的比赛，所以平时在学校需要使用电脑学习项目，记录笔记等，同时我的老爷u盘速度太慢了，所以这个网站就当我在学校和家里的联系处，我会把我的学习项目等放在这个网站上，虽然也只有我一个人看而已。。。</p>
-]]></content>
-      <categories>
-        <category>自述</category>
-      </categories>
-      <tags>
-        <tag>网站</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>clash-meta版分享</title>
-    <url>/posts/c2e69b0b.html</url>
-    <content><![CDATA[<p><a href="https://www.wenshushu.cn/f/gfclfdzlt2t">Clash for Windows meta内核版  下载地址</a>(快传文件，2025年3月3日10点自动删除)</p>
-]]></content>
-      <categories>
-        <category>资源</category>
-      </categories>
-      <tags>
-        <tag>clash</tag>
-        <tag>梯子</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>博客项目分享</title>
-    <url>/posts/b70d5f18.html</url>
-    <content><![CDATA[<p><a href="https://c.wss.cc/f/ghcq21iwwdg">hexo初  下载地址</a>(快传文件，2025年3月10日10点自动删除)</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm config set registry https://registry.npmmirror.com</span><br><span class="line"></span><br><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>资源</category>
-      </categories>
-      <tags>
-        <tag>网站</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>科创项目之神农中草药</title>
-    <url>/posts/a4c9bebf.html</url>
-    <content><![CDATA[<blockquote>
-<p>又要科创比赛了，想了好久的项目(真的很久)，终于想出来了一个—等高线山体部位识别的项目，但是因为时间不够收集数据，所以只能用老师改进的神农中草药识别系统，这个文章用ai来介绍一下这个项目。</p>
-</blockquote>
-<span id="more"></span>
-<h1 id="程序介绍"><a href="#程序介绍" class="headerlink" title="程序介绍"></a>程序介绍</h1><h2 id="项目目的"><a href="#项目目的" class="headerlink" title="项目目的"></a>项目目的</h2><p>以中小学生为主要科普对象，辅助生物学、中医药文化课程教学，同时适用于青少年自然教育活动的实践场景(如校园社团、研学营地、植物园参观等)。</p>
-<h2 id="核心功能"><a href="#核心功能" class="headerlink" title="核心功能"></a>核心功能</h2><ol>
-<li>单图识别：支持手机拍摄&#x2F;相册上传单张草药图片</li>
-<li>批量识别：最多同时上传5张图片进行批量识别</li>
-<li>识别反馈：显示识别置信度（85%以上高亮标记）</li>
-</ol>
-<h2 id="创新点"><a href="#创新点" class="headerlink" title="创新点"></a>创新点</h2><ol>
-<li>多窗口资料系统的教学创新</li>
-<li>教育型图像识别系统设计</li>
-<li>多维科普知识架构</li>
-</ol>
-<h2 id="程序展示"><a href="#程序展示" class="headerlink" title="程序展示"></a>程序展示</h2><p><img data-src="https://www.helloimg.com/i/2025/03/02/67c427b403f42.png" alt="code"></p>
-<h1 id="程序资源下载"><a href="#程序资源下载" class="headerlink" title="程序资源下载"></a>程序资源下载</h1><blockquote>
-<p>可以在这下载本文章介绍的程序<br><a href="https://pan.baidu.com/s/11dj4kmF_dYN4Qe-i3tWCgg?pwd=xrpx">点我前往下载!!</a></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>科创</category>
-      </categories>
-      <tags>
-        <tag>科创项目</tag>
-        <tag>神农中草药</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>pip安装库教学</title>
-    <url>/posts/a310fcca.html</url>
-    <content><![CDATA[<h1 id="1-安装库教学"><a href="#1-安装库教学" class="headerlink" title="1.安装库教学"></a>1.安装库教学</h1><h2 id="1-1打开cmd"><a href="#1-1打开cmd" class="headerlink" title="1.1打开cmd"></a>1.1打开cmd</h2><p>win+r输入</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cmd</span><br></pre></td></tr></table></figure>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"next.yooui.top","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.22.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":true,"style":"mac"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="1.安装库教学1.1打开cmdwin+r输入 1cmd 回车后即可打开cmd命令提示符 1.2如何安装库接下来是安装库的命令，如下 1pip install 包名 -i 源 命令的组成    名称 解释    pip pip 是 Python 的包管理工具，用于安装和管理不属于 Python 标准库的其他软件包。   install ​install 表示从指定来源下载并安装 Python 包到当">
+<meta property="og:type" content="article">
+<meta property="og:title" content="pip安装库教学">
+<meta property="og:url" content="http://next.yooui.top/posts/a310fcca.html">
+<meta property="og:site_name" content="Yooui-Blog">
+<meta property="og:description" content="1.安装库教学1.1打开cmdwin+r输入 1cmd 回车后即可打开cmd命令提示符 1.2如何安装库接下来是安装库的命令，如下 1pip install 包名 -i 源 命令的组成    名称 解释    pip pip 是 Python 的包管理工具，用于安装和管理不属于 Python 标准库的其他软件包。   install ​install 表示从指定来源下载并安装 Python 包到当">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-03-16T13:41:59.000Z">
+<meta property="article:modified_time" content="2025-03-16T14:22:50.738Z">
+<meta property="article:author" content="Yoooui">
+<meta property="article:tag" content="python">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://next.yooui.top/posts/a310fcca.html">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://next.yooui.top/posts/a310fcca.html","path":"posts/a310fcca.html","title":"pip安装库教学"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>pip安装库教学 | Yooui-Blog</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Yooui-Blog</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="搜索..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-%E5%AE%89%E8%A3%85%E5%BA%93%E6%95%99%E5%AD%A6"><span class="nav-text">1.安装库教学</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1%E6%89%93%E5%BC%80cmd"><span class="nav-text">1.1打开cmd</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85%E5%BA%93"><span class="nav-text">1.2如何安装库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-3%E5%A6%82%E4%BD%95%E5%8D%B8%E8%BD%BD%E5%BA%93"><span class="nav-text">1.3如何卸载库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-4%E9%95%9C%E5%83%8F%E6%BA%90"><span class="nav-text">1.4镜像源</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#python%E6%89%80%E6%9C%89%E5%BA%93%E5%8F%8A%E5%8A%9F%E8%83%BD-%E5%85%B11000"><span class="nav-text">python所有库及功能(共1000+)</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Yoooui"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">Yoooui</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/Yooi2026" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Yooi2026" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:baiducomout@qq.com" title="E-Mail → mailto:baiducomout@qq.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://res.abeim.cn/api/qq/?qq=3052915674" title="QQ → https:&#x2F;&#x2F;res.abeim.cn&#x2F;api&#x2F;qq&#x2F;?qq&#x3D;3052915674" rel="noopener me" target="_blank"><i class="fab fa-qq fa-fw"></i>QQ</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="sidebar-inner sidebar-blogroll">
+      <div class="links-of-blogroll animated">
+        <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+          友链
+        </div>
+        <ul class="links-of-blogroll-list">
+            <li class="links-of-blogroll-item">
+              <a href="http://blog.yooui.top/" title="http:&#x2F;&#x2F;blog.yooui.top" rel="noopener" target="_blank">Yooouiの小站</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://chatgpt.yooui.top/" title="https:&#x2F;&#x2F;ChatGPT.yooui.top" rel="noopener" target="_blank">YooouiのChatGPT</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://blog.zero666.top/" title="https:&#x2F;&#x2F;blog.zero666.top&#x2F;" rel="noopener" target="_blank">Zeroの奇妙空间</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://next.yooui.top/posts/a310fcca.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Yoooui">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Yooui-Blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="pip安装库教学 | Yooui-Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          pip安装库教学
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2025-03-16 21:41:59 / 修改时间：22:22:50" itemprop="dateCreated datePublished" datetime="2025-03-16T21:41:59+08:00">2025-03-16</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%BC%96%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">编程</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>22k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>20 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h1 id="1-安装库教学"><a href="#1-安装库教学" class="headerlink" title="1.安装库教学"></a>1.安装库教学</h1><h2 id="1-1打开cmd"><a href="#1-1打开cmd" class="headerlink" title="1.1打开cmd"></a>1.1打开cmd</h2><p>win+r输入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cmd</span><br></pre></td></tr></table></figure>
 <p>回车后即可打开cmd命令提示符</p>
 <h2 id="1-2如何安装库"><a href="#1-2如何安装库" class="headerlink" title="1.2如何安装库"></a>1.2如何安装库</h2><p>接下来是安装库的命令，如下</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip install 包名 -i 源</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install 包名 -i 源</span><br></pre></td></tr></table></figure>
 <p>命令的组成</p>
 <table>
 <thead>
@@ -153,7 +324,7 @@
 </tr>
 </tbody></table>
 <h2 id="1-3如何卸载库"><a href="#1-3如何卸载库" class="headerlink" title="1.3如何卸载库"></a>1.3如何卸载库</h2><p>很简单，只需要把安装的指令中的<strong>install</strong>改为<strong>uninstall</strong>就行了,如下</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip uninstall 包名</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip uninstall 包名</span><br></pre></td></tr></table></figure>
 <p>因为是卸载，所以源的部分就不用写了</p>
 <table>
 <thead>
@@ -175,7 +346,7 @@
 <td>此处表示具体库的名称</td>
 </tr>
 </tbody></table>
-<h2 id="1-4镜像源"><a href="#1-4镜像源" class="headerlink" title="1.4镜像源"></a>1.4镜像源</h2><div class="tabs" id="选项卡-2"><ul class="nav-tabs"><li class="tab active"><a href="#选项卡-2-1">清华源</a></li><li class="tab"><a href="#选项卡-2-2">阿里云镜像</a></li><li class="tab"><a href="#选项卡-2-3">豆瓣镜像</a></li><li class="tab"><a href="#选项卡-2-4">中国科技大学</a></li></ul><div class="tab-content"><div class="tab-pane active" id="选项卡-2-1"><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="选项卡-2-2"><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://mirrors.aliyun.com/pypi/simple/</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="选项卡-2-3"><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://pypi.douban.com/simple/</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="选项卡-2-4"><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://pypi.mirrors.ustc.edu.cn/simple/</span><br></pre></td></tr></table></figure></div></div></div>
+<h2 id="1-4镜像源"><a href="#1-4镜像源" class="headerlink" title="1.4镜像源"></a>1.4镜像源</h2><div class="tabs" id="选项卡-2"><ul class="nav-tabs"><li class="tab active"><a href="#选项卡-2-1">清华源</a></li><li class="tab"><a href="#选项卡-2-2">阿里云镜像</a></li><li class="tab"><a href="#选项卡-2-3">豆瓣镜像</a></li><li class="tab"><a href="#选项卡-2-4">中国科技大学</a></li></ul><div class="tab-content"><div class="tab-pane active" id="选项卡-2-1"><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="选项卡-2-2"><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://mirrors.aliyun.com/pypi/simple/</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="选项卡-2-3"><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://pypi.douban.com/simple/</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="选项卡-2-4"><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://pypi.mirrors.ustc.edu.cn/simple/</span><br></pre></td></tr></table></figure></div></div></div>
 
 <h1 id="python所有库及功能-共1000"><a href="#python所有库及功能-共1000" class="headerlink" title="python所有库及功能(共1000+)"></a>python所有库及功能(共1000+)</h1><p>最后最后，附上python所有库及功能(共1000+)</p>
 <ol>
@@ -426,7 +597,7 @@
 <p>s3cmd，命令行工具，用于管理Amazon S3和CloudFront。</p>
 <p>youtube-dl，命令行程序，从YouTube下载视频。</p>
 <p>you-get，Python3写的视频下载工具，可用于YouTube&#x2F;Youku优酷&#x2F;Niconico视频下载</p>
-<p>Coursera，从<a href="http://coursera.org下载视频,可重新命名文件wikiteam,wiki下载工具./">http://coursera.org下载视频，可重新命名文件wikiteam，wiki下载工具。</a></p>
+<p>Coursera，从<a target="_blank" rel="noopener" href="http://coursera.org下载视频,可重新命名文件wikiteam,wiki下载工具./">http://coursera.org下载视频，可重新命名文件wikiteam，wiki下载工具。</a></p>
 <p>subliminal，命令行工具，搜索和下载字幕的函数库requests，HTTP函数库，更加人性化。grequests，异步HTTP请求+ Gevent（高性能高并发函数库）。</p>
 <p>urllib3，一个线程安全的HTTP连接池，支持文件post。</p>
 <p>httplib2，综合HTTP的客户端函数库。treq， Python API接口，Twisted的HTTP客户。 Mininet，流行的网络仿真器,API采用python编写。</p>
@@ -663,12 +834,152 @@
 <p>django-devserver,Django调试工具。</p>
 <p>flask-debugtoolbar,flask调试工具。</p>
 <p>恭喜你！看完了所有库的介绍(不排除偷鸡的可能)，那么你已经是一位强有力的python高手了吧！(即使不是)</p>
-]]></content>
-      <categories>
-        <category>编程</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-</search>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/python/" rel="tag"><i class="fa fa-tag"></i> python</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/posts/b70d5f18.html" rel="prev" title="博客项目分享">
+                  <i class="fa fa-angle-left"></i> 博客项目分享
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments"><div id="twikoo-comments"></div></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Yoooui</span>
+  </div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+      本站总字数&asymp;<span title="站点总字数">24k</span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      阅读本站耗时&asymp;<span title="站点阅读时长">22 分钟</span>
+</div>
+
+<!-- 网站运行时间的设置 -->
+<p><span id="timeDate">载入天数... </span>
+<span id="times">载入时分秒...</span></p>
+<script>
+    var now = new Date();
+    function createtime() {
+        var grt= new Date("03/07/2025 15:54:40");//此处修改你的建站时间或者网站上线时间
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+        document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 ";
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+    }
+setInterval("createtime()",250);
+</script>
+
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+  <script src="/js/third-party/pace.js"></script>
+
+
+  
+
+
+
+
+<script class="next-config" data-name="twikoo" type="application/json">{"enable":true,"visitor":false,"envId":"https://comment.yooui.top/.netlify/functions/twikoo","el":"#twikoo-comments"}</script>
+<script>
+document.addEventListener('page:loaded', () => {
+  NexT.utils.loadComments(CONFIG.twikoo.el)
+    .then(() => NexT.utils.getScript(
+      CONFIG.twikoo.jsUrl || 'https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js',
+      { condition: window.twikoo }
+    ))
+    .then(() => {
+      twikoo.init(CONFIG.twikoo);
+    });
+});
+</script>
+<style>
+.post-block, .comments {
+  overflow: visible;
+}
+.tk-owo-emotion {
+  display: inline-block;
+}
+</style>
+]
+  
+    <script src="/js/cursor/cherry.js"></script>
+</body>
+</html>
