@@ -41,18 +41,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>博客项目分享</title>
-    <url>/posts/b70d5f18.html</url>
-    <content><![CDATA[<p><a href="https://c.wss.cc/f/ghcq21iwwdg">hexo初  下载地址</a>(快传文件，2025年3月10日10点自动删除)</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm config set registry https://registry.npmmirror.com</span><br><span class="line"></span><br><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>资源</category>
-      </categories>
-      <tags>
-        <tag>网站</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>我为什么想要搭这个网站?</title>
     <url>/posts/85998d46.html</url>
     <content><![CDATA[<h1 id="关于我为什么想要搭一个博客"><a href="#关于我为什么想要搭一个博客" class="headerlink" title="关于我为什么想要搭一个博客"></a>关于我为什么想要搭一个博客</h1><p>在2022年的某一天，我在逛B站时，看到了<a href="https://www.bilibili.com/video/BV1G84y1B7NH/">Fomalhaut大佬的视频</a>，于是决定去做一个自己的博客(主要是因为想在朋友面前装B嘿嘿)。</p>
@@ -111,6 +99,18 @@
       <tags>
         <tag>科创项目</tag>
         <tag>神农中草药</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>博客项目分享</title>
+    <url>/posts/b70d5f18.html</url>
+    <content><![CDATA[<p><a href="https://c.wss.cc/f/ghcq21iwwdg">hexo初  下载地址</a>(快传文件，2025年3月10日10点自动删除)</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm config set registry https://registry.npmmirror.com</span><br><span class="line"></span><br><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>资源</category>
+      </categories>
+      <tags>
+        <tag>网站</tag>
       </tags>
   </entry>
 </search>
