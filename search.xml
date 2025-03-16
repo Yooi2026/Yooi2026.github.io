@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hello World</title>
+    <url>/posts/4a17b156.html</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>clash-meta版分享</title>
+    <url>/posts/c2e69b0b.html</url>
+    <content><![CDATA[<p><a href="https://www.wenshushu.cn/f/gfclfdzlt2t">Clash for Windows meta内核版  下载地址</a>(快传文件，2025年3月3日10点自动删除)</p>
+]]></content>
+      <categories>
+        <category>资源</category>
+      </categories>
+      <tags>
+        <tag>clash</tag>
+        <tag>梯子</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>怎么搭建一个自己的ChatGPT</title>
     <url>/posts/c1378c40.html</url>
     <content><![CDATA[<blockquote>
@@ -23,22 +54,16 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/posts/4a17b156.html</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
+    <title>博客项目分享</title>
+    <url>/posts/b70d5f18.html</url>
+    <content><![CDATA[<p><a href="https://c.wss.cc/f/ghcq21iwwdg">hexo初  下载地址</a>(快传文件，2025年3月10日10点自动删除)</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm config set registry https://registry.npmmirror.com</span><br><span class="line"></span><br><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>资源</category>
+      </categories>
+      <tags>
+        <tag>网站</tag>
+      </tags>
   </entry>
   <entry>
     <title>我为什么想要搭这个网站?</title>
@@ -55,19 +80,6 @@
       </categories>
       <tags>
         <tag>网站</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>clash-meta版分享</title>
-    <url>/posts/c2e69b0b.html</url>
-    <content><![CDATA[<p><a href="https://www.wenshushu.cn/f/gfclfdzlt2t">Clash for Windows meta内核版  下载地址</a>(快传文件，2025年3月3日10点自动删除)</p>
-]]></content>
-      <categories>
-        <category>资源</category>
-      </categories>
-      <tags>
-        <tag>clash</tag>
-        <tag>梯子</tag>
       </tags>
   </entry>
   <entry>
@@ -99,18 +111,6 @@
       <tags>
         <tag>科创项目</tag>
         <tag>神农中草药</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>博客项目分享</title>
-    <url>/posts/b70d5f18.html</url>
-    <content><![CDATA[<p><a href="https://c.wss.cc/f/ghcq21iwwdg">hexo初  下载地址</a>(快传文件，2025年3月10日10点自动删除)</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm config set registry https://registry.npmmirror.com</span><br><span class="line"></span><br><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>资源</category>
-      </categories>
-      <tags>
-        <tag>网站</tag>
       </tags>
   </entry>
 </search>
