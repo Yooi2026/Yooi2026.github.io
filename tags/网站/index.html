@@ -299,8 +299,10 @@
 </div>
 
 <!-- 网站运行时间的设置 -->
-<p><span id="timeDate">载入天数... </span>
-<span id="times">载入时分秒...</span></p>
+<div>
+<span id="timeDate">载入天数... </span>
+<span id="times">载入时分秒...</span>
+</div>
 <script>
     var now = new Date();
     function createtime() {
@@ -359,6 +361,12 @@ setInterval("createtime()",250);
   
 
 
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
 
 
 <script class="next-config" data-name="twikoo" type="application/json">{"enable":true,"visitor":false,"envId":"https://comment.yooui.top/.netlify/functions/twikoo","el":"#twikoo-comments"}</script>
