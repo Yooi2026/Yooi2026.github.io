@@ -1348,7 +1348,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #fcff4f;
+    background: #ffe35b;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -2985,7 +2985,7 @@ header.header {
   }
 }
 body {
-  background: url("/images/background.jpg");
+  background: url("https://img.picui.cn/free/2025/03/28/67e6a362e0231.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;

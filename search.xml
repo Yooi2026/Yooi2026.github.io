@@ -1,152 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>怎么搭建一个自己的ChatGPT</title>
-    <url>/posts/c1378c40.html</url>
-    <content><![CDATA[<div class="note info"><p>之前, 我自己搭了个ChatGPT的webui，现在需要重新搭一次，所以写成一篇文章记录一下。ChatGPT的webui主要解决chatgpt需要挂魔法访问的问题，且更稳定，而且用自己搭建的可以和朋友装！<br>演示网站：<a href="https://chatgpt.yooui.top/">ChatGPT.Yooui.top</a>,<a href="https://chatgpt.zero666.top/">Chatgpt.zero666.top</a><br>这篇文章主要是来讲解如何搭建第二个ChatGPT的方法<br>话不多说直接开始教程！</p>
-</div>
-<span id="more"></span>
-
-<h1 id="1-前置条件"><a href="#1-前置条件" class="headerlink" title="1.前置条件"></a>1.前置条件</h1><ol>
-<li>需要一个OPENAI账号(ChatGPT账号)，或者有效的API KEY，没有的话可以根据<a href="https://github.com/chatanywhere/GPT_API_free">chatanywhere</a>这个项目的文档去获取免费api（因为主播是穷入，所以就到这里面去获取api了）</li>
-<li>需要一个国内的域名，没有的可以去<a href="https://www.vpsor.cn/">硅云</a>白嫖一个</li>
-<li>需要有能够访问外国网站的能力(你懂的)</li>
-</ol>
-<h1 id="2-正式教程"><a href="#2-正式教程" class="headerlink" title="2.正式教程"></a>2.正式教程</h1>]]></content>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Markdown语法与Next自带标签写法汇总</title>
+      <link href="/posts/11b781c3.html"/>
+      <url>/posts/11b781c3.html</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>Markdown是一种轻量级标记语言，排版语法简洁，让人们更多地关注内容本身而非排版。它使用易读易写的纯文本格式编写文档，可与HTML混编，可导出 HTML、PDF 以及本身的 .md 格式的文件。因简洁、高效、易读、易写，Markdown被大量使用，如Github、Wikipedia、简书等。（来源：<a href="https://markdown.com.cn/basic-syntax/">Markdown官方教程 | Markdown 基本语法</a>）</p></blockquote><span id="more"></span><h1 id="1-Markdown语法自带格式"><a href="#1-Markdown语法自带格式" class="headerlink" title="1.Markdown语法自带格式"></a>1.Markdown语法自带格式</h1><hr><h2 id="1-1代码块"><a href="#1-1代码块" class="headerlink" title="1.1代码块"></a>1.1代码块</h2><div class="tabs" id="选项卡-2"><ul class="nav-tabs"><li class="tab active"><a href="#选项卡-2-1">示例源码</a></li><li class="tab"><a href="#选项卡-2-2">渲染演示</a></li></ul><div class="tab-content"><div class="tab-pane active" id="选项卡-2-1"><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">\```shell</span><br><span class="line">pip install 包名 -i 源</span><br><span class="line">\```</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="选项卡-2-2"><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install 包名 -i 源</span><br></pre></td></tr></table></figure></div></div></div><!-- more --><h2 id="1-2多级标题"><a href="#1-2多级标题" class="headerlink" title="1.2多级标题"></a>1.2多级标题</h2><div class="tabs" id="选项卡-3"><ul class="nav-tabs"><li class="tab active"><a href="#选项卡-3-1">示例源码</a></li><li class="tab"><a href="#选项卡-3-2">渲染演示</a></li></ul><div class="tab-content"><div class="tab-pane active" id="选项卡-3-1"><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># H1</span><br><span class="line">## H2</span><br><span class="line">### H3</span><br><span class="line">#### H4</span><br><span class="line">##### H5</span><br><span class="line">###### H6</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="选项卡-3-2"><div><p style="font-size: 2rem;">H1</p><p style="font-size: 1.5em;">H2</p><p style="font-size: 1.17em;">H3</p><p style="font-size: 1em;">H4</p><p style="font-size: 0.83em​;">H5</p><p style="font-size: 0.67em​;">H6</p></div></div></div></div><h2 id="1-3-文字样式"><a href="#1-3-文字样式" class="headerlink" title="1.3 文字样式"></a>1.3 文字样式</h2><div class="tabs" id="选项卡-1"><ul class="nav-tabs"><li class="tab active"><a href="#选项卡-1-1">示例源码</a></li><li class="tab"><a href="#选项卡-1-2">渲染演示</a></li></ul><div class="tab-content"><div class="tab-pane active" id="选项卡-1-1"><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;u&gt;下划线演示&lt;/u&gt;</span><br><span class="line"></span><br><span class="line">文字**加粗**演示</span><br><span class="line"></span><br><span class="line">文字*斜体*演示</span><br><span class="line"></span><br><span class="line">文本`高亮`演示</span><br><span class="line"></span><br><span class="line">文本~~删除~~线演示</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="选项卡-1-2"><p><u>下划线演示</u></p><p>文字<strong>加粗</strong>演示</p><p>文字<em>斜体</em>演示</p><p>文本<code>高亮</code>演示</p><p>文本<del>删除</del>线演示</p></div></div></div><h2 id="1-4-引用"><a href="#1-4-引用" class="headerlink" title="1.4 引用"></a>1.4 引用</h2><div class="tabs" id="选项卡-4"><ul class="nav-tabs"><li class="tab active"><a href="#选项卡-4-1">示例源码</a></li><li class="tab"><a href="#选项卡-4-2">渲染演示</a></li></ul><div class="tab-content"><div class="tab-pane active" id="选项卡-4-1"><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&gt;  Java</span><br><span class="line">&gt; 二级引用演示</span><br><span class="line">&gt; MySQL</span><br><span class="line">&gt; &gt;外键</span><br><span class="line">&gt; &gt;</span><br><span class="line">&gt; &gt;事务</span><br><span class="line">&gt; &gt;</span><br><span class="line">&gt; &gt;**行级锁**(引用内部一样可以用格式)</span><br><span class="line">&gt; </span><br><span class="line">&gt; ....</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="选项卡-4-2"><blockquote><p> Java<br>二级引用演示<br>MySQL</p><blockquote><p>外键</p><p>事务</p><p><strong>行级锁</strong>(引用内部一样可以用格式)</p></blockquote><p>….</p></blockquote></div></div></div><h2 id="1-5-分割线"><a href="#1-5-分割线" class="headerlink" title="1.5 分割线"></a>1.5 分割线</h2><div class="tabs" id="选项卡-5"><ul class="nav-tabs"><li class="tab active"><a href="#选项卡-5-1">示例源码</a></li><li class="tab"><a href="#选项卡-5-2">渲染演示</a></li></ul><div class="tab-content"><div class="tab-pane active" id="选项卡-5-1"><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">***</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="选项卡-5-2"><hr><hr></div></div></div><h2 id="1-6-列表"><a href="#1-6-列表" class="headerlink" title="1.6 列表"></a>1.6 列表</h2><h3 id="1-6-1-无序列表"><a href="#1-6-1-无序列表" class="headerlink" title="1.6.1 无序列表"></a>1.6.1 无序列表</h3><div class="tabs" id="选项卡-6"><ul class="nav-tabs"><li class="tab active"><a href="#选项卡-6-1">示例源码</a></li><li class="tab"><a href="#选项卡-6-2">渲染演示</a></li></ul><div class="tab-content"><div class="tab-pane active" id="选项卡-6-1"><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">* Java</span><br><span class="line">* Python</span><br><span class="line">* ...</span><br><span class="line"></span><br><span class="line">+ Java</span><br><span class="line">+ Python</span><br><span class="line">+ ...</span><br><span class="line"></span><br><span class="line">- Java</span><br><span class="line">- Python</span><br><span class="line">- ...</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="选项卡-6-2"><ul><li>Java</li><li>Python</li><li>…</li></ul><ul><li>Java</li><li>Python</li><li>…</li></ul><ul><li>Java</li><li>Python</li><li>…</li></ul></div></div></div><h3 id="1-6-2-有序列表"><a href="#1-6-2-有序列表" class="headerlink" title="1.6.2 有序列表"></a>1.6.2 有序列表</h3><div class="tabs" id="选项卡-7"><ul class="nav-tabs"><li class="tab active"><a href="#选项卡-7-1">示例源码</a></li><li class="tab"><a href="#选项卡-7-2">渲染演示</a></li></ul><div class="tab-content"><div class="tab-pane active" id="选项卡-7-1"><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 注意后面有空格</span><br><span class="line">1. </span><br><span class="line">2. </span><br><span class="line">3. </span><br><span class="line">4. </span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="选项卡-7-2"><p>1.<br>2.<br>3.<br>4. </p></div></div></div><h2 id="1-7-图片"><a href="#1-7-图片" class="headerlink" title="1.7 图片"></a>1.7 图片</h2><div class="tabs" id="选项卡-8"><ul class="nav-tabs"><li class="tab active"><a href="#选项卡-8-1">示例源码</a></li><li class="tab"><a href="#选项卡-8-2">渲染演示</a></li></ul><div class="tab-content"><div class="tab-pane active" id="选项卡-8-1"><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 本地图片</span><br><span class="line">&lt;img src=&quot;/img/avatar.jpg&quot; alt=&quot;示例图片&quot; style=&quot;zoom:50%;&quot; /&gt;</span><br><span class="line"># 在线图片</span><br><span class="line">![code](https://haowallpaper.com/link/common/file/previewFileImg/16445206213021056)</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="选项卡-8-2"><img data-src="/images/avatar.jpg" alt="示例图片" style="zoom:50%;" /><p><img data-src="https://haowallpaper.com/link/common/file/previewFileImg/16445206213021056" alt="code"></p></div></div></div><h2 id="1-8-表格"><a href="#1-8-表格" class="headerlink" title="1.8 表格"></a>1.8 表格</h2><div class="tabs" id="选项卡-9"><ul class="nav-tabs"><li class="tab active"><a href="#选项卡-9-1">示例源码</a></li><li class="tab"><a href="#选项卡-9-2">渲染演示</a></li></ul><div class="tab-content"><div class="tab-pane active" id="选项卡-9-1"><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">| 项目标号 | 资金     | 备注 |</span><br><span class="line">| -------- | -------- | ---- |</span><br><span class="line">| 1        | 100，000 | 无   |</span><br><span class="line">| 2        | 200，000 | 无   |</span><br><span class="line">| 3        | 300,600  | 重要 |</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="选项卡-9-2"><table><thead><tr><th>项目标号</th><th>资金</th><th>备注</th></tr></thead><tbody><tr><td>1</td><td>100，000</td><td>无</td></tr><tr><td>2</td><td>200，000</td><td>无</td></tr><tr><td>3</td><td>300,600</td><td>重要</td></tr></tbody></table></div></div></div><h2 id="1-9-数学公式"><a href="#1-9-数学公式" class="headerlink" title="1.9 数学公式"></a>1.9 数学公式</h2><div class="tabs" id="选项卡-10"><ul class="nav-tabs"><li class="tab active"><a href="#选项卡-10-1">示例源码</a></li><li class="tab"><a href="#选项卡-10-2">渲染演示</a></li></ul><div class="tab-content"><div class="tab-pane active" id="选项卡-10-1"><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$$</span><br><span class="line">\Gamma(z)=\int_0^\infty t^&#123;z-1&#125;e^&#123;-t&#125;dt.</span><br><span class="line">$$</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="选项卡-10-2"><p>$$<br>\Gamma(z)&#x3D;\int_0^\infty t^{z-1}e^{-t}dt.<br>$$</p></div></div></div><h1 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h1><p>先写到这里，剩下的之后再写</p>]]></content>
+      
+      
       <categories>
-        <category>网站</category>
+          
+          <category> 演示 </category>
+          
       </categories>
-      <tags>
-        <tag>网站</tag>
-        <tag>ChatGPT</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Markdown语法与Next自带标签写法汇总</title>
-    <url>/posts/11b781c3.html</url>
-    <content><![CDATA[<blockquote>
-<p>Markdown是一种轻量级标记语言，排版语法简洁，让人们更多地关注内容本身而非排版。它使用易读易写的纯文本格式编写文档，可与HTML混编，可导出 HTML、PDF 以及本身的 .md 格式的文件。因简洁、高效、易读、易写，Markdown被大量使用，如Github、Wikipedia、简书等。（来源：<a href="https://markdown.com.cn/basic-syntax/">Markdown官方教程 | Markdown 基本语法</a>）</p>
-</blockquote>
-<span id="more"></span>
-<h1 id="1-Markdown语法自带格式"><a href="#1-Markdown语法自带格式" class="headerlink" title="1.Markdown语法自带格式"></a>1.Markdown语法自带格式</h1><hr>
-<h2 id="1-1代码块"><a href="#1-1代码块" class="headerlink" title="1.1代码块"></a>1.1代码块</h2><div class="tabs" id="选项卡-2"><ul class="nav-tabs"><li class="tab active"><a href="#选项卡-2-1">示例源码</a></li><li class="tab"><a href="#选项卡-2-2">渲染演示</a></li></ul><div class="tab-content"><div class="tab-pane active" id="选项卡-2-1"><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">\```shell</span><br><span class="line">pip install 包名 -i 源</span><br><span class="line">\```</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="选项卡-2-2"><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">pip install 包名 -i 源</span><br></pre></td></tr></table></figure></div></div></div>
-<!-- more -->
-<h2 id="1-2多级标题"><a href="#1-2多级标题" class="headerlink" title="1.2多级标题"></a>1.2多级标题</h2><div class="tabs" id="选项卡-3"><ul class="nav-tabs"><li class="tab active"><a href="#选项卡-3-1">示例源码</a></li><li class="tab"><a href="#选项卡-3-2">渲染演示</a></li></ul><div class="tab-content"><div class="tab-pane active" id="选项卡-3-1"><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># H1</span><br><span class="line">## H2</span><br><span class="line">### H3</span><br><span class="line">#### H4</span><br><span class="line">##### H5</span><br><span class="line">###### H6</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="选项卡-3-2"><div>
-<p style="font-size: 2rem;">H1</p>
-<p style="font-size: 1.5em;">H2</p>
-<p style="font-size: 1.17em;">H3</p>
-<p style="font-size: 1em;">H4</p>
-<p style="font-size: 0.83em​;">H5</p>
-<p style="font-size: 0.67em​;">H6</p>
-
-</div></div></div></div>
-<h2 id="1-3-文字样式"><a href="#1-3-文字样式" class="headerlink" title="1.3 文字样式"></a>1.3 文字样式</h2><div class="tabs" id="选项卡-1"><ul class="nav-tabs"><li class="tab active"><a href="#选项卡-1-1">示例源码</a></li><li class="tab"><a href="#选项卡-1-2">渲染演示</a></li></ul><div class="tab-content"><div class="tab-pane active" id="选项卡-1-1"><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;u&gt;下划线演示&lt;/u&gt;</span><br><span class="line"></span><br><span class="line">文字**加粗**演示</span><br><span class="line"></span><br><span class="line">文字*斜体*演示</span><br><span class="line"></span><br><span class="line">文本`高亮`演示</span><br><span class="line"></span><br><span class="line">文本~~删除~~线演示</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="选项卡-1-2"><p><u>下划线演示</u></p>
-<p>文字<strong>加粗</strong>演示</p>
-<p>文字<em>斜体</em>演示</p>
-<p>文本<code>高亮</code>演示</p>
-<p>文本<del>删除</del>线演示</p></div></div></div>
-<h2 id="1-4-引用"><a href="#1-4-引用" class="headerlink" title="1.4 引用"></a>1.4 引用</h2><div class="tabs" id="选项卡-4"><ul class="nav-tabs"><li class="tab active"><a href="#选项卡-4-1">示例源码</a></li><li class="tab"><a href="#选项卡-4-2">渲染演示</a></li></ul><div class="tab-content"><div class="tab-pane active" id="选项卡-4-1"><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;  Java</span><br><span class="line">&gt; 二级引用演示</span><br><span class="line">&gt; MySQL</span><br><span class="line">&gt; &gt;外键</span><br><span class="line">&gt; &gt;</span><br><span class="line">&gt; &gt;事务</span><br><span class="line">&gt; &gt;</span><br><span class="line">&gt; &gt;**行级锁**(引用内部一样可以用格式)</span><br><span class="line">&gt; </span><br><span class="line">&gt; ....</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="选项卡-4-2"><blockquote>
-<p> Java<br>二级引用演示<br>MySQL</p>
-<blockquote>
-<p>外键</p>
-<p>事务</p>
-<p><strong>行级锁</strong>(引用内部一样可以用格式)</p>
-</blockquote>
-<p>….</p>
-</blockquote></div></div></div>
-<h2 id="1-5-分割线"><a href="#1-5-分割线" class="headerlink" title="1.5 分割线"></a>1.5 分割线</h2><div class="tabs" id="选项卡-5"><ul class="nav-tabs"><li class="tab active"><a href="#选项卡-5-1">示例源码</a></li><li class="tab"><a href="#选项卡-5-2">渲染演示</a></li></ul><div class="tab-content"><div class="tab-pane active" id="选项卡-5-1"><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">***</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="选项卡-5-2"><hr>
-<hr></div></div></div>
-<h2 id="1-6-列表"><a href="#1-6-列表" class="headerlink" title="1.6 列表"></a>1.6 列表</h2><h3 id="1-6-1-无序列表"><a href="#1-6-1-无序列表" class="headerlink" title="1.6.1 无序列表"></a>1.6.1 无序列表</h3><div class="tabs" id="选项卡-6"><ul class="nav-tabs"><li class="tab active"><a href="#选项卡-6-1">示例源码</a></li><li class="tab"><a href="#选项卡-6-2">渲染演示</a></li></ul><div class="tab-content"><div class="tab-pane active" id="选项卡-6-1"><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">* Java</span><br><span class="line">* Python</span><br><span class="line">* ...</span><br><span class="line"></span><br><span class="line">+ Java</span><br><span class="line">+ Python</span><br><span class="line">+ ...</span><br><span class="line"></span><br><span class="line">- Java</span><br><span class="line">- Python</span><br><span class="line">- ...</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="选项卡-6-2"><ul>
-<li>Java</li>
-<li>Python</li>
-<li>…</li>
-</ul>
-<ul>
-<li>Java</li>
-<li>Python</li>
-<li>…</li>
-</ul>
-<ul>
-<li>Java</li>
-<li>Python</li>
-<li>…</li>
-</ul></div></div></div>
-<h3 id="1-6-2-有序列表"><a href="#1-6-2-有序列表" class="headerlink" title="1.6.2 有序列表"></a>1.6.2 有序列表</h3><div class="tabs" id="选项卡-7"><ul class="nav-tabs"><li class="tab active"><a href="#选项卡-7-1">示例源码</a></li><li class="tab"><a href="#选项卡-7-2">渲染演示</a></li></ul><div class="tab-content"><div class="tab-pane active" id="选项卡-7-1"><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 注意后面有空格</span><br><span class="line">1. </span><br><span class="line">2. </span><br><span class="line">3. </span><br><span class="line">4. </span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="选项卡-7-2"><p>1.<br>2.<br>3.<br>4. </p></div></div></div>
-<h2 id="1-7-图片"><a href="#1-7-图片" class="headerlink" title="1.7 图片"></a>1.7 图片</h2><div class="tabs" id="选项卡-8"><ul class="nav-tabs"><li class="tab active"><a href="#选项卡-8-1">示例源码</a></li><li class="tab"><a href="#选项卡-8-2">渲染演示</a></li></ul><div class="tab-content"><div class="tab-pane active" id="选项卡-8-1"><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 本地图片</span><br><span class="line">&lt;img src=&quot;/img/avatar.jpg&quot; alt=&quot;示例图片&quot; style=&quot;zoom:50%;&quot; /&gt;</span><br><span class="line"># 在线图片</span><br><span class="line">![code](https://haowallpaper.com/link/common/file/previewFileImg/16445206213021056)</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="选项卡-8-2"><img data-src="/images/avatar.jpg" alt="示例图片" style="zoom:50%;" />
-
-<p><img data-src="https://haowallpaper.com/link/common/file/previewFileImg/16445206213021056" alt="code"></p></div></div></div>
-<h2 id="1-8-表格"><a href="#1-8-表格" class="headerlink" title="1.8 表格"></a>1.8 表格</h2><div class="tabs" id="选项卡-9"><ul class="nav-tabs"><li class="tab active"><a href="#选项卡-9-1">示例源码</a></li><li class="tab"><a href="#选项卡-9-2">渲染演示</a></li></ul><div class="tab-content"><div class="tab-pane active" id="选项卡-9-1"><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">| 项目标号 | 资金     | 备注 |</span><br><span class="line">| -------- | -------- | ---- |</span><br><span class="line">| 1        | 100，000 | 无   |</span><br><span class="line">| 2        | 200，000 | 无   |</span><br><span class="line">| 3        | 300,600  | 重要 |</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="选项卡-9-2"><table>
-<thead>
-<tr>
-<th>项目标号</th>
-<th>资金</th>
-<th>备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1</td>
-<td>100，000</td>
-<td>无</td>
-</tr>
-<tr>
-<td>2</td>
-<td>200，000</td>
-<td>无</td>
-</tr>
-<tr>
-<td>3</td>
-<td>300,600</td>
-<td>重要</td>
-</tr>
-</tbody></table></div></div></div>
-<h2 id="1-9-数学公式"><a href="#1-9-数学公式" class="headerlink" title="1.9 数学公式"></a>1.9 数学公式</h2><div class="tabs" id="选项卡-10"><ul class="nav-tabs"><li class="tab active"><a href="#选项卡-10-1">示例源码</a></li><li class="tab"><a href="#选项卡-10-2">渲染演示</a></li></ul><div class="tab-content"><div class="tab-pane active" id="选项卡-10-1"><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$$</span><br><span class="line">\Gamma(z)=\int_0^\infty t^&#123;z-1&#125;e^&#123;-t&#125;dt.</span><br><span class="line">$$</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="选项卡-10-2"><p>$$<br>\Gamma(z)&#x3D;\int_0^\infty t^{z-1}e^{-t}dt.<br>$$</p></div></div></div>
-
-
-<h1 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h1><p>先写到这里，剩下的之后再写</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> Markdown </tag>
+            
+            <tag> 外挂标签 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>怎么搭建一个自己的ChatGPT</title>
+      <link href="/posts/c1378c40.html"/>
+      <url>/posts/c1378c40.html</url>
+      
+        <content type="html"><![CDATA[<div class="note info"><p>之前, 我自己搭了个ChatGPT的webui，现在需要重新搭一次，所以写成一篇文章记录一下。ChatGPT的webui主要解决chatgpt需要挂魔法访问的问题，且更稳定，而且用自己搭建的可以和朋友装！<br>演示网站：<a href="https://chatgpt.yooui.top/">ChatGPT.Yooui.top</a>,<a href="https://chatgpt.zero666.top/">Chatgpt.zero666.top</a><br>这篇文章主要是来讲解如何搭建第二个ChatGPT的方法<br>话不多说直接开始教程！</p></div><span id="more"></span><h1 id="1-前置条件"><a href="#1-前置条件" class="headerlink" title="1.前置条件"></a>1.前置条件</h1><ol><li>需要一个OPENAI账号(ChatGPT账号)，或者有效的API KEY，没有的话可以根据<a href="https://github.com/chatanywhere/GPT_API_free">chatanywhere</a>这个项目的文档去获取免费api（因为主播是穷入，所以就到这里面去获取api了）</li><li>需要一个国内的域名，没有的可以去<a href="https://www.vpsor.cn/">硅云</a>白嫖一个</li><li>需要有能够访问外国网站的能力(你懂的)</li></ol><h1 id="2-正式教程"><a href="#2-正式教程" class="headerlink" title="2.正式教程"></a>2.正式教程</h1>]]></content>
+      
+      
       <categories>
-        <category>演示</category>
+          
+          <category> 网站 </category>
+          
       </categories>
-      <tags>
-        <tag>Markdown</tag>
-        <tag>外挂标签</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/posts/4a17b156.html</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<span id="more"></span>
-
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>我为什么想要搭这个网站?</title>
-    <url>/posts/85998d46.html</url>
-    <content><![CDATA[<h1 id="关于我为什么想要搭一个博客"><a href="#关于我为什么想要搭一个博客" class="headerlink" title="关于我为什么想要搭一个博客"></a>关于我为什么想要搭一个博客</h1><p>在2022年的某一天，我在逛B站时，看到了<a href="https://www.bilibili.com/video/BV1G84y1B7NH/">Fomalhaut大佬的视频</a>，于是决定去做一个自己的博客(主要是因为想在朋友面前装B嘿嘿)。</p>
-<span id="more"></span>
-<h1 id="关于我搭博客的历程"><a href="#关于我搭博客的历程" class="headerlink" title="关于我搭博客的历程"></a>关于我搭博客的历程</h1><p>原先是看Fomalhaut大佬的视频，一步一步搭好一个<a href="https://blog.yooui.top/">hexo+butterfly主题的博客</a>。观看Fomalhaut大佬的视频时发现，他自己也搭了一个博客，并且把教程的文章都写好放在了上面，我又觉得原来做的博客过于臃肿，决定看着教程重新搭建整理一下。于是乎，我就对着上面重新搭建了一个博客，也是一样的hexo+butterfly主题。观看到引入字体，引入icon的时候，我一直看不明白，一度想要放弃这一步，但是我觉得做博客就不能偷工减料。我突然想到Fomalhaut大佬的视频;在看过Fomalhaut大佬的视频后，终于引入好了字体</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo cl;hexo g;hexo s</span><br></pre></td></tr></table></figure>
-<p>后,看到字体和icon生效的时候真的很开心。看完文档，搭建完博客，看到博客里面五颜六色，点击效果，各种icon图标，各种界面。我虽然开心，但是我发现随着界面，插件的增多,hexo渲染速度变慢，整个界面也复杂了，而且做完后，没了新鲜感，也懒得去写文章。所以我决定重新搭一个简洁，实用的博客，所以我更换主题为Next，有了搭建第一个博客的经验，这个博客我自己更改配置项(看不懂的直接翻译哈哈)，基本没有依赖教程，于是就成了现在这个样子，但是还是没有让我满意，我觉得还是需要美化一点，不然太单调了。</p>
-<h1 id="网站定位"><a href="#网站定位" class="headerlink" title="网站定位"></a>网站定位</h1><p>我本身是一个初中生，有些科创的比赛，所以平时在学校需要使用电脑学习项目，记录笔记等，同时我的老爷u盘速度太慢了，所以这个网站就当我在学校和家里的联系处，我会把我的学习项目等放在这个网站上，虽然也只有我一个人看而已。。。</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 网站 </tag>
+            
+            <tag> ChatGPT </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>我为什么想要搭这个网站?</title>
+      <link href="/posts/85998d46.html"/>
+      <url>/posts/85998d46.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="关于我为什么想要搭一个博客"><a href="#关于我为什么想要搭一个博客" class="headerlink" title="关于我为什么想要搭一个博客"></a>关于我为什么想要搭一个博客</h1><p>在2022年的某一天，我在逛B站时，看到了<a href="https://www.bilibili.com/video/BV1G84y1B7NH/">Fomalhaut大佬的视频</a>，于是决定去做一个自己的博客(主要是因为想在朋友面前装B嘿嘿)。</p><span id="more"></span><h1 id="关于我搭博客的历程"><a href="#关于我搭博客的历程" class="headerlink" title="关于我搭博客的历程"></a>关于我搭博客的历程</h1><p>原先是看Fomalhaut大佬的视频，一步一步搭好一个<a href="https://blog.yooui.top/">hexo+butterfly主题的博客</a>。观看Fomalhaut大佬的视频时发现，他自己也搭了一个博客，并且把教程的文章都写好放在了上面，我又觉得原来做的博客过于臃肿，决定看着教程重新搭建整理一下。于是乎，我就对着上面重新搭建了一个博客，也是一样的hexo+butterfly主题。观看到引入字体，引入icon的时候，我一直看不明白，一度想要放弃这一步，但是我觉得做博客就不能偷工减料。我突然想到Fomalhaut大佬的视频;在看过Fomalhaut大佬的视频后，终于引入好了字体</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo cl;hexo g;hexo s</span><br></pre></td></tr></table></figure><p>后,看到字体和icon生效的时候真的很开心。看完文档，搭建完博客，看到博客里面五颜六色，点击效果，各种icon图标，各种界面。我虽然开心，但是我发现随着界面，插件的增多,hexo渲染速度变慢，整个界面也复杂了，而且做完后，没了新鲜感，也懒得去写文章。所以我决定重新搭一个简洁，实用的博客，所以我更换主题为Next，有了搭建第一个博客的经验，这个博客我自己更改配置项(看不懂的直接翻译哈哈)，基本没有依赖教程，于是就成了现在这个样子，但是还是没有让我满意，我觉得还是需要美化一点，不然太单调了。</p><h1 id="网站定位"><a href="#网站定位" class="headerlink" title="网站定位"></a>网站定位</h1><p>我本身是一个初中生，有些科创的比赛，所以平时在学校需要使用电脑学习项目，记录笔记等，同时我的老爷u盘速度太慢了，所以这个网站就当我在学校和家里的联系处，我会把我的学习项目等放在这个网站上，虽然也只有我一个人看而已。。。</p>]]></content>
+      
+      
       <categories>
-        <category>自述</category>
+          
+          <category> 自述 </category>
+          
       </categories>
-      <tags>
-        <tag>网站</tag>
-      </tags>
-  </entry>
+      
+      
+        <tags>
+            
+            <tag> 网站 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/posts/4a17b156.html"/>
+      <url>/posts/4a17b156.html</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><span id="more"></span><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
 </search>
