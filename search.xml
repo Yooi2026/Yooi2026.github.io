@@ -22,23 +22,6 @@
       </tags>
   </entry>
   <entry>
-    <title>我为什么想要搭这个网站?</title>
-    <url>/posts/85998d46.html</url>
-    <content><![CDATA[<h1 id="关于我为什么想要搭一个博客"><a href="#关于我为什么想要搭一个博客" class="headerlink" title="关于我为什么想要搭一个博客"></a>关于我为什么想要搭一个博客</h1><p>在2022年的某一天，我在逛B站时，看到了<a href="https://www.bilibili.com/video/BV1G84y1B7NH/">Fomalhaut大佬的视频</a>，于是决定去做一个自己的博客(主要是因为想在朋友面前装B嘿嘿)。</p>
-<span id="more"></span>
-<h1 id="关于我搭博客的历程"><a href="#关于我搭博客的历程" class="headerlink" title="关于我搭博客的历程"></a>关于我搭博客的历程</h1><p>原先是看Fomalhaut大佬的视频，一步一步搭好一个<a href="https://blog.yooui.top/">hexo+butterfly主题的博客</a>。观看Fomalhaut大佬的视频时发现，他自己也搭了一个博客，并且把教程的文章都写好放在了上面，我又觉得原来做的博客过于臃肿，决定看着教程重新搭建整理一下。于是乎，我就对着上面重新搭建了一个博客，也是一样的hexo+butterfly主题。观看到引入字体，引入icon的时候，我一直看不明白，一度想要放弃这一步，但是我觉得做博客就不能偷工减料。我突然想到Fomalhaut大佬的视频;在看过Fomalhaut大佬的视频后，终于引入好了字体</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo cl;hexo g;hexo s</span><br></pre></td></tr></table></figure>
-<p>后,看到字体和icon生效的时候真的很开心。看完文档，搭建完博客，看到博客里面五颜六色，点击效果，各种icon图标，各种界面。我虽然开心，但是我发现随着界面，插件的增多,hexo渲染速度变慢，整个界面也复杂了，而且做完后，没了新鲜感，也懒得去写文章。所以我决定重新搭一个简洁，实用的博客，所以我更换主题为Next，有了搭建第一个博客的经验，这个博客我自己更改配置项(看不懂的直接翻译哈哈)，基本没有依赖教程，于是就成了现在这个样子，但是还是没有让我满意，我觉得还是需要美化一点，不然太单调了。</p>
-<h1 id="网站定位"><a href="#网站定位" class="headerlink" title="网站定位"></a>网站定位</h1><p>我本身是一个初中生，有些科创的比赛，所以平时在学校需要使用电脑学习项目，记录笔记等，同时我的老爷u盘速度太慢了，所以这个网站就当我在学校和家里的联系处，我会把我的学习项目等放在这个网站上，虽然也只有我一个人看而已。。。</p>
-]]></content>
-      <categories>
-        <category>自述</category>
-      </categories>
-      <tags>
-        <tag>网站</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Markdown语法与Next自带标签写法汇总</title>
     <url>/posts/11b781c3.html</url>
     <content><![CDATA[<blockquote>
@@ -148,5 +131,22 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>我为什么想要搭这个网站?</title>
+    <url>/posts/85998d46.html</url>
+    <content><![CDATA[<h1 id="关于我为什么想要搭一个博客"><a href="#关于我为什么想要搭一个博客" class="headerlink" title="关于我为什么想要搭一个博客"></a>关于我为什么想要搭一个博客</h1><p>在2022年的某一天，我在逛B站时，看到了<a href="https://www.bilibili.com/video/BV1G84y1B7NH/">Fomalhaut大佬的视频</a>，于是决定去做一个自己的博客(主要是因为想在朋友面前装B嘿嘿)。</p>
+<span id="more"></span>
+<h1 id="关于我搭博客的历程"><a href="#关于我搭博客的历程" class="headerlink" title="关于我搭博客的历程"></a>关于我搭博客的历程</h1><p>原先是看Fomalhaut大佬的视频，一步一步搭好一个<a href="https://blog.yooui.top/">hexo+butterfly主题的博客</a>。观看Fomalhaut大佬的视频时发现，他自己也搭了一个博客，并且把教程的文章都写好放在了上面，我又觉得原来做的博客过于臃肿，决定看着教程重新搭建整理一下。于是乎，我就对着上面重新搭建了一个博客，也是一样的hexo+butterfly主题。观看到引入字体，引入icon的时候，我一直看不明白，一度想要放弃这一步，但是我觉得做博客就不能偷工减料。我突然想到Fomalhaut大佬的视频;在看过Fomalhaut大佬的视频后，终于引入好了字体</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo cl;hexo g;hexo s</span><br></pre></td></tr></table></figure>
+<p>后,看到字体和icon生效的时候真的很开心。看完文档，搭建完博客，看到博客里面五颜六色，点击效果，各种icon图标，各种界面。我虽然开心，但是我发现随着界面，插件的增多,hexo渲染速度变慢，整个界面也复杂了，而且做完后，没了新鲜感，也懒得去写文章。所以我决定重新搭一个简洁，实用的博客，所以我更换主题为Next，有了搭建第一个博客的经验，这个博客我自己更改配置项(看不懂的直接翻译哈哈)，基本没有依赖教程，于是就成了现在这个样子，但是还是没有让我满意，我觉得还是需要美化一点，不然太单调了。</p>
+<h1 id="网站定位"><a href="#网站定位" class="headerlink" title="网站定位"></a>网站定位</h1><p>我本身是一个初中生，有些科创的比赛，所以平时在学校需要使用电脑学习项目，记录笔记等，同时我的老爷u盘速度太慢了，所以这个网站就当我在学校和家里的联系处，我会把我的学习项目等放在这个网站上，虽然也只有我一个人看而已。。。</p>
+]]></content>
+      <categories>
+        <category>自述</category>
+      </categories>
+      <tags>
+        <tag>网站</tag>
+      </tags>
   </entry>
 </search>
